@@ -13,8 +13,8 @@ class BlogPostTemplate extends React.Component {
     return (
       <Layout location={this.props.location}>
         <Helmet title={`${post.frontmatter.title} | ${siteTitle}`} />
-        <PostHeader postdate={post.frontmatter.date} />
-        <h1>{post.frontmatter.title}</h1>
+        <PostHeader postdate={post.frontmatter.date} posttitle ={post.frontmatter.title} />
+        
         <div>
           <MDXRenderer scope={this.props.__mdxScope}>
             {post.code.body}

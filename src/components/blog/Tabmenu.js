@@ -8,14 +8,12 @@ const Tabmenu = ({mainpage, menu_item}) => {
     return (
     
         
-        <Tabs>
+        <Tabs >
         <TabList>
-        {menu_item.map(item => <Tab>{item.name}</Tab>)}
-          {/* <Tab>Mario</Tab>
-          <Tab disabled>Luigi</Tab>
-          <Tab>Peach</Tab>
-          <Tab>Yoshi</Tab>
-          <Tab>Toad</Tab> */}
+          {/* <Tab  >d</Tab>
+          <Tab selectedTab>e</Tab> */}
+          {/* {menu_item.map(item => <Link to={item.link} ><Tab>{item.name}</Tab></Link>)} */}
+          {menu_item.map(item => <Tab key={item.id}>{item.name}</Tab>)}
         </TabList>
     
         <TabPanel>
@@ -32,6 +30,21 @@ const Tabmenu = ({mainpage, menu_item}) => {
           <p>
             Source:{' '}
             <a href="https://en.wikipedia.org/wiki/Mario" target="_blank">
+              Wikipedia
+            </a>
+          </p>
+        </TabPanel>
+        <TabPanel>
+          <p>
+            <b>Luigi</b> (<i>Japanese: ルイージ Hepburn: Ruīji, [ɾɯ.iː.dʑi̥]</i>) (<i>English: /luˈiːdʒi/;
+            Italian: [luˈiːdʒi]</i>) is a fictional character featured in video games and related media
+            released by Nintendo. Created by prominent game designer Shigeru Miyamoto, Luigi is portrayed
+            as the slightly younger but taller fraternal twin brother of Nintendo's mascot Mario, and
+            appears in many games throughout the Mario franchise, often as a sidekick to his brother.
+          </p>
+          <p>
+            Source:{' '}
+            <a href="https://en.wikipedia.org/wiki/Luigi" target="_blank">
               Wikipedia
             </a>
           </p>

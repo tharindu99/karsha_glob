@@ -5,7 +5,7 @@ import Img from 'gatsby-image'
 import './../../styles/global.css'
 import { Link, graphql } from 'gatsby'
 import { FaGithub, FaTwitter } from 'react-icons/fa'
-import { FiExternalLink, FiCodepen } from 'react-icons/fi'
+import { FiExternalLink, FiCodepen } from 'react-icons/fi' 
 
 let cardFocus = {
     cursor: 'pointer',
@@ -177,7 +177,7 @@ let CardList = prop => {
               gridTemplateColumns: 'repeat(2, 1fr)',
             },
           }}
-        >
+        > 
           {prop.image_info.map(card => <Card {...card} key={card.name} />)}
         </div>
       </StyleRoot>
