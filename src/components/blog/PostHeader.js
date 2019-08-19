@@ -1,7 +1,6 @@
 import React from 'react'
 import { Link } from 'gatsby'
 import { rhythm } from '../../utils/typography'
-import Tabmenu from 'components/blog/Tabmenu'
 import NavMenu from 'components/blog/NavMenu'
 
 const PostHeader = props => {

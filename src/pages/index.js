@@ -7,6 +7,8 @@ import Introduction from '../components/home/Introduction'
 import Card from '../components/home/Card'
 
 
+
+
 class BlogIndex extends React.Component {
   render() {
     const siteTitle = get(this, 'props.data.site.siteMetadata.title')
@@ -37,7 +39,9 @@ class BlogIndex extends React.Component {
         </Helmet>
         <Introduction />
         <Card image_info={image_data} />
+        
       </Layout>
+      
     )
   }
 }
